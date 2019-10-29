@@ -1,0 +1,109 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.f2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-header {
+    height: 150px;
+
+}
+
+.main-header .logo {
+  width: 400px;
+  margin: 0 auto;
+  text-align:center;
+  padding: 35px 0 0;
+
+}
+.main-header .logo-img {
+  display: block;
+  width:259px;
+  height: 46px;
+  background: url(../img/logo-1x.png) no-repeat;
+  margin: 0 auto;
+}
+
+.main-header .logo p {
+  font-size: 110%;
+  color: #fff;
+  font-style: italic;
+  margin: 5px 0 0;
+}
+.main-header .header-nav {
+  float: right;
+}
+
+.main-header .header-nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+
+.main-header .header-nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  font-size: 95%;
+  display: block;
+  padding: 5px 10px;
+
+}
+.jumbotron {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+
+.home-block {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.home-block h2 {
+  color: #f26b6b;
+}
+
+.home-block .desc {
+  margin: 2rem 0;
+}
+
+.splash {
+  color: #f2f2f2;
+}
+
+.splash h1 {
+  font-size: 170%;
+  padding-top:4rem;
+  padding-bottom: 1rem;
+}
+.splash p {
+  font-size: 120%;
+}
+
+.light-grey {
+  background: #f2f2f2;
+}
+
+.green {
+  background: #4ebfbf;
+}
+.dark {
+  background: #0d0d0d;
+}
+
+.btn-primary {
+  background: #4ebfbf;
+  border-color: #42a4a4;
+}
+.btn-primary:hover {
+  background-color: #42a4a4;
+  border-color: #42a4a4;
+}
