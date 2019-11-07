@@ -12,3 +12,8 @@ switch ($_SERVER["SERVER_NAME"]) {
     # code...
     break;
 }
+
+
+$clientConfig = new stdClass;
+$clientConfig->url =   $cfg['url'];
+$clientConfig->quizUrl = $cfg['url'] . "data/quiz.json?v=1";

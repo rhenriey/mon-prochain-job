@@ -22,7 +22,8 @@ class ViewsManager {
     "testez-vous"=>[
       "file"=>"views/view-testez-vous.php"      ,
       "label"=>"Testez-vous",
-      "title"=>"Mon prochain job : testez votre capacité à vous reconvertir"
+      "title"=>"Mon prochain job : testez votre capacité à vous reconvertir",
+      "js"=>["js/mpj-quiz.js"]
     ],
     "a-propos"=>[
       "file"=>"views/view-a-propos.php"      ,
@@ -45,6 +46,19 @@ class ViewsManager {
       return self::$views[$v];
     }
     return false;
+  }
+
+  public static function getCurrentViewJs() {
+    $v = self::getCurrentView();
+    if ($v) {
+      if (array_key_exists("js", $v) && is_array($v["js"])) {
+        foreach($v["js"] as $js) {
+          echo '<script src="' . self::getHomeUrl() . $js . '"></script>';
+        }
+      }
+
+    }
+
   }
 
   public static function renderMenu() {
